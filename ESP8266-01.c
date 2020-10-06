@@ -13,25 +13,55 @@ bool eATRST(void){
     return _recvFind("OK",3000);
 }
 
+/*
+ AT+CWMODE?
+ +CWMOMDE:2
+ 
+ OK
+ * 1=Sta
+ * 2=AP
+ * 3=Both
+ */
 bool qATCWMODE(uint8_t *mode){
     byte _mode[1];
     byte _rx_data[32];
     byte _index;
     
+    //Make sure mode is NOT zero;
+    if (!mode){
+        return false;
+    }
+    
+    //Clear RX buffer
     Serial2_clear();
+    
+    //Send Query AT+CWMODE?
     Serial2_println("AT+CWMODE?");
+    
+    //Set timeout = 5000ms
     timerSet(ESP_TIMER,5000);
+    
+    //Wait until receive data within 5000ms
     while(!Serial2_ready() && timerBusy(ESP_TIMER));
+    
+    //If data was received, then Decode
     if(Serial2_ready()){
         Serial2_readBytes(_rx_data,Serial2_available());
         _index = FindChar(0,_rx_data,':');
         _mode[0] = _rx_data[_index];
     }
+    
+    //Data not received within 5000ms, then return false
     else
         return false;
+    
+    //Update mode value
     *mode = StrToUInt(_mode);
+    
+    //Return true if clean process
     return true;
 }
+
 //Low level function
 bool _recvFind(const char* target, uint16_t timeout) {   
     uint8_t so_far = 0;
