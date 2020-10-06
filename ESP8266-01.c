@@ -32,7 +32,23 @@ const char* _eATGMR(void){
 }
 
 bool _sATCWJAP(const char* ssid, const char* pwd){
+
+    Serial2_clear();    
+    Serial2_print("AT+CWJAP=\"");
+    Serial2_print(ssid);
+    Serial2_print("\",\"");
+    Serial2_print(pwd);
+    Serial2_println("\"");
     
+    if(_recvString("OK",10000)) return true;
+    return false;
+
+}
+
+bool _eATCWQAP(void){
+    Serial2_clear();
+    Serial2_println("AT+CWQAP");
+    return _recvFind("OK",2000);
 }
 
 bool _sATCWMODE(uint8_t mode){
@@ -154,15 +170,18 @@ bool _recvFind(const char* target, uint16_t timeout) {
     }
     return rtn_value;
 }
-char* _recvString (const char* target, uint16_t timeout){
-    byte rx_data[32];
+
+bool _recvString (const char* target, uint16_t timeout){
+    byte _rx_data[UART2_RX_MAX];
     //reload timer   
     timerSet(ESP_TIMER,timeout);
     while(timerBusy(ESP_TIMER)){
-        if(Serial2_ready()){            
-            Serial2_readBytes(rx_data,UART2_RX_MAX);
-            if(0,rx_data,target)break;
-        }
+     if(Serial2_ready()){
+         Serial2_readBytes(_rx_data,Serial2_available());
+         if(InStr(0,_rx_data,target))
+         break;   
     }
-    return rx_data;
+     return true;
+    }
+    return false;
 }
