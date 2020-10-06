@@ -6,8 +6,9 @@
 
 bool _recvFind(const char* target, uint16_t timeout);
 char* _recvString (const char* target, uint16_t timeout);
-bool eAT(void);
-bool eATRST(void);
-bool qATCWMODE(uint8_t *mode);
+bool _eAT(void);
+bool _eATRST(void);
+bool _sATCWMODE(uint8_t mode);
+bool _qATCWMODE(uint8_t *mode);
 
 #endif /* #ifndef __ESP8266_H__ */

@@ -1,17 +1,58 @@
 #include "ESP8266-01.h"
 
-//Middle level function
-bool eAT(void){
+/*=============================================================================
+ Middle level function
+ =============================================================================*/
+
+bool _eAT(void){
     Serial2_clear();    
     Serial2_println("AT");
     return _recvFind("OK",1000);
 }
 
-bool eATRST(void){
+bool _eATRST(void){
     Serial2_clear();
     Serial2_println("AT+RST");
     return _recvFind("OK",3000);
 }
+
+bool _sATCWMODE(uint8_t mode){
+    byte _str[15];
+    byte _rx_data[32];
+    
+    //Clear RX buffer
+    Serial2_clear();
+    
+    //Prepare Command
+    sprintf(_str,"AT+CWMODE=%d",mode);
+    
+    //Sending AT+CWMODE=mode
+    Serial2_println(_str);
+    
+    //Set timeout to 5000ms
+    timerSet(ESP_TIMER,5000);
+    
+    //wait until data receive within 5000ms
+    while(!Serial2_ready() && timerBusy (ESP_TIMER));
+    
+    //if data coming, copy it to _rx_data
+    if(Serial2_ready()){
+        Serial2_readBytes(_rx_data,Serial2_available());
+    }
+    //otherwise, return false
+    else
+        return false;
+    
+    //if _rx_data contain "OK" or "no change", then return true
+    if(InStr(0,_rx_data,"OK") || InStr(0,_rx_data,"no change"))
+        return true;
+    
+    //otherwise return false
+    return false;
+}
+/*=============================================================================
+ Low level function
+ =============================================================================*/
 
 /*
  AT+CWMODE?
@@ -22,7 +63,7 @@ bool eATRST(void){
  * 2=AP
  * 3=Both
  */
-bool qATCWMODE(uint8_t *mode){
+bool _qATCWMODE(uint8_t *mode){
     byte _mode[1];
     byte _rx_data[32];
     byte _index;
@@ -62,7 +103,7 @@ bool qATCWMODE(uint8_t *mode){
     return true;
 }
 
-//Low level function
+
 bool _recvFind(const char* target, uint16_t timeout) {   
     uint8_t so_far = 0;
     uint8_t received;
