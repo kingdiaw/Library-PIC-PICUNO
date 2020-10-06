@@ -8,6 +8,8 @@ bool _recvFind(const char* target, uint16_t timeout);
 char* _recvString (const char* target, uint16_t timeout);
 bool _eAT(void);
 bool _eATRST(void);
+const char* _eATGMR(void);
+bool _sATCWJAP(const char* ssid, const char* pwd);
 bool _sATCWMODE(uint8_t mode);
 bool _qATCWMODE(uint8_t *mode);
 

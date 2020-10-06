@@ -16,6 +16,25 @@ bool _eATRST(void){
     return _recvFind("OK",3000);
 }
 
+const char* _eATGMR(void){
+    byte _rx_data[UART2_RX_MAX];
+    
+    Serial2_clear();
+    Serial2_println("AT+GMR");
+    timerSet(ESP_TIMER,5000);
+    while(!Serial2_ready() && timerBusy(ESP_TIMER));
+    if(Serial2_ready()){
+        Serial2_readBytes(_rx_data,Serial2_available());
+    }
+    if(InStr(0,_rx_data,"OK"))
+        return _rx_data;
+    else return "NULL";
+}
+
+bool _sATCWJAP(const char* ssid, const char* pwd){
+    
+}
+
 bool _sATCWMODE(uint8_t mode){
     byte _str[15];
     byte _rx_data[32];
