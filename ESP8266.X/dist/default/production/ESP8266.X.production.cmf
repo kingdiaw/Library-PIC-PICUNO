@@ -1,0 +1,1777 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 2C8 2C8 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\ESP8266.X.production.obj
+cinit CODE 0 F40 F40 7E 1
+text0 CODE 0 1512 1512 18 1
+text1 CODE 0 1542 1542 2 1
+text2 CODE 0 152A 152A C 1
+text3 CODE 0 10DC 10DC 5C 1
+text4 CODE 0 2CC 2CC 594 1
+text5 CODE 0 14BC 14BC 22 1
+text6 CODE 0 860 860 23E 1
+text7 CODE 0 1440 1440 2A 1
+text8 CODE 0 146A 146A 2A 1
+text9 CODE 0 BC6 BC6 11A 1
+text10 CODE 0 1494 1494 28 1
+text11 CODE 0 DA6 DA6 92 1
+text12 CODE 0 13BC 13BC 2C 1
+text13 CODE 0 153A 153A 4 1
+text14 CODE 0 CE0 CE0 C6 1
+text15 CODE 0 FBE FBE 62 1
+text16 CODE 0 E38 E38 84 1
+text17 CODE 0 13E8 13E8 2C 1
+text18 CODE 0 1190 1190 52 1
+text19 CODE 0 138C 138C 30 1
+text20 CODE 0 1138 1138 58 1
+text21 CODE 0 A9E A9E 128 1
+text22 CODE 0 12D0 12D0 44 1
+text23 CODE 0 11E2 11E2 52 1
+text24 CODE 0 14DE 14DE 1A 1
+text25 CODE 0 1020 1020 5E 1
+text26 CODE 0 1234 1234 4E 1
+text27 CODE 0 107E 107E 5E 1
+text28 CODE 0 1282 1282 4E 1
+text29 CODE 0 1414 1414 2C 1
+text30 CODE 0 1314 1314 3C 1
+text31 CODE 0 1350 1350 3C 1
+text32 CODE 0 153E 153E 4 1
+text33 CODE 0 EBC EBC 84 1
+idataCOMRAM CODE 0 1536 1536 4 1
+cstackCOMRAM COMRAM 1 27 27 1E 1
+cstackBANK0 BANK0 1 FA FA 6 1
+cstackBANK1 BANK1 1 1E5 1E5 12 1
+temp COMRAM 1 49 49 1 1
+bssBANK0 BANK0 1 60 60 81 1
+bssBANK1 BANK1 1 100 100 E5 1
+bssBANK2 BANK2 1 200 200 60 1
+intcode CODE 0 8 8 2C0 1
+idataBANK0 CODE 0 14F8 14F8 19 1
+dataBANK0 BANK0 1 E1 E1 19 1
+dataCOMRAM COMRAM 1 45 45 4 1
+bssCOMRAM COMRAM 1 1 1 26 1
+mediumconst MEDIUMCONST 0 7DC4 7DC4 172 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 1F7-1FF 1
+RAM 260-5FF 1
+SFR F38-FFF 1
+BANK1 1F7-1FF 1
+BANK2 260-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST 1511-1511 1
+CONST 1544-7DC3 1
+CONST 7F36-7F36 1
+STACK 260-5FF 1
+SMALLCONST 1511-1511 1
+SMALLCONST 1544-7DC3 1
+SMALLCONST 7F36-7F36 1
+CODE 4-7 1
+CODE 1511-1511 1
+CODE 1544-7DC3 1
+CODE 7F36-7F36 1
+BIGRAM 4A-5F 1
+BIGRAM 1F7-1FF 1
+BIGRAM 260-5FF 1
+COMRAM 4A-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1511-1511 1
+MEDIUMCONST 1544-7DC3 1
+MEDIUMCONST 7F36-7F36 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ESP8266.X.production.obj
+8 intcode CODE >51:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8 intcode CODE >246:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+52 intcode CODE >57:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+56 intcode CODE >60:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5A intcode CODE >61:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5E intcode CODE >65:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+60 intcode CODE >66:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+62 intcode CODE >68:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+68 intcode CODE >70:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6A intcode CODE >71:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+70 intcode CODE >73:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+76 intcode CODE >74:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+76 intcode CODE >78:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+7C intcode CODE >80:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+7E intcode CODE >81:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+84 intcode CODE >83:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8A intcode CODE >84:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8A intcode CODE >88:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+90 intcode CODE >89:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+B4 intcode CODE >90:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+BA intcode CODE >92:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+BE intcode CODE >93:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+DC intcode CODE >94:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+E2 intcode CODE >97:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+E8 intcode CODE >98:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10C intcode CODE >100:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+112 intcode CODE >102:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+116 intcode CODE >103:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+122 intcode CODE >104:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+122 intcode CODE >105:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+13A intcode CODE >106:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+14C intcode CODE >107:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+164 intcode CODE >103:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+168 intcode CODE >112:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+16C intcode CODE >113:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+170 intcode CODE >115:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+176 intcode CODE >117:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+18C intcode CODE >118:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+18C intcode CODE >119:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1A0 intcode CODE >120:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1AC intcode CODE >121:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1B8 intcode CODE >122:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1BC intcode CODE >123:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1BC intcode CODE >125:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1C2 intcode CODE >127:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1D8 intcode CODE >128:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1E4 intcode CODE >129:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1E6 intcode CODE >130:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1EC intcode CODE >132:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1F0 intcode CODE >133:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1F2 intcode CODE >134:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1F2 intcode CODE >139:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1F6 intcode CODE >140:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1FA intcode CODE >142:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+200 intcode CODE >144:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+216 intcode CODE >145:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+216 intcode CODE >146:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+22A intcode CODE >147:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+236 intcode CODE >148:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+242 intcode CODE >149:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+246 intcode CODE >150:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+246 intcode CODE >152:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+24C intcode CODE >154:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+262 intcode CODE >155:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+26E intcode CODE >156:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+270 intcode CODE >157:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+276 intcode CODE >159:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+27A intcode CODE >160:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+27C intcode CODE >161:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+27C intcode CODE >164:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EBC text33 CODE >167:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EBC text33 CODE >172:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EC0 text33 CODE >174:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EC4 text33 CODE >176:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EC8 text33 CODE >178:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+ECC text33 CODE >192:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+ED2 text33 CODE >193:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+ED6 text33 CODE >194:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EDA text33 CODE >195:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EDE text33 CODE >196:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EE2 text33 CODE >197:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EE6 text33 CODE >198:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EEA text33 CODE >199:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EEE text33 CODE >210:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EF2 text33 CODE >211:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EF6 text33 CODE >212:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EFA text33 CODE >213:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+EFE text33 CODE >214:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F02 text33 CODE >217:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F2A text33 CODE >220:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F2E text33 CODE >221:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F30 text33 CODE >222:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F32 text33 CODE >223:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F34 text33 CODE >238:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F38 text33 CODE >241:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F3A text33 CODE >243:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F3C text33 CODE >244:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F3E text33 CODE >246:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+153E text32 CODE >1992:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+153E text32 CODE >1994:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1350 text31 CODE >2091:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1350 text31 CODE >2093:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1354 text31 CODE >2095:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+135C text31 CODE >2097:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1372 text31 CODE >2098:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+137A text31 CODE >2100:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+137E text31 CODE >2101:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1382 text31 CODE >2102:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1388 text31 CODE >2103:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1388 text31 CODE >2105:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1314 text30 CODE >2269:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1314 text30 CODE >2271:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1318 text30 CODE >2273:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1320 text30 CODE >2275:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1336 text30 CODE >2276:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+133E text30 CODE >2278:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1342 text30 CODE >2279:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1346 text30 CODE >2280:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+134C text30 CODE >2281:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+134C text30 CODE >2283:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1414 text29 CODE >266:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1414 text29 CODE >270:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1416 text29 CODE >272:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1418 text29 CODE >273:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+141E text29 CODE >274:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1426 text29 CODE >275:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1436 text29 CODE >272:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1282 text28 CODE >2175:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1284 text28 CODE >2182:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+128A text28 CODE >2184:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1292 text28 CODE >2185:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1294 text28 CODE >2186:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+129C text28 CODE >2187:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12B0 text28 CODE >2188:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12B2 text28 CODE >2189:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12B4 text28 CODE >2190:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12B6 text28 CODE >2191:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12BA text28 CODE >2193:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12BE text28 CODE >2194:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12C0 text28 CODE >2195:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12C0 text28 CODE >2197:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12C4 text28 CODE >2198:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12C8 text28 CODE >2199:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12CC text28 CODE >2200:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+12CE text28 CODE >2201:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+107E text27 CODE >2241:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+107E text27 CODE >2243:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1080 text27 CODE >2244:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10A4 text27 CODE >2245:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10A8 text27 CODE >2243:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10A8 text27 CODE >2246:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10CE text27 CODE >2247:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10D4 text27 CODE >2248:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10DA text27 CODE >2249:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1234 text26 CODE >1997:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1236 text26 CODE >2004:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+123C text26 CODE >2006:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1244 text26 CODE >2007:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1246 text26 CODE >2008:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+124E text26 CODE >2009:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1262 text26 CODE >2010:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1264 text26 CODE >2011:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1266 text26 CODE >2012:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1268 text26 CODE >2013:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+126C text26 CODE >2015:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1270 text26 CODE >2016:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1272 text26 CODE >2017:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1272 text26 CODE >2019:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1276 text26 CODE >2020:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+127A text26 CODE >2021:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+127E text26 CODE >2022:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1280 text26 CODE >2023:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1020 text25 CODE >2063:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1020 text25 CODE >2065:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1022 text25 CODE >2066:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1046 text25 CODE >2067:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+104A text25 CODE >2065:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+104A text25 CODE >2068:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1070 text25 CODE >2069:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1076 text25 CODE >2070:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+107C text25 CODE >2071:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+14DE text24 CODE >29:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14DE text24 CODE >30:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14EA text24 CODE >31:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14F6 text24 CODE >32:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+11E2 text23 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+11E2 text23 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+11EA text23 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+11F2 text23 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+11F6 text23 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+11F8 text23 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+11FE text23 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1200 text23 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1200 text23 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1204 text23 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+120A text23 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1216 text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+121E text23 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1220 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1220 text23 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1226 text23 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+122A text23 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+1232 text23 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+12D0 text22 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12D0 text22 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12DA text22 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12DE text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12E0 text22 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12E6 text22 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12E8 text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12E8 text22 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12EC text22 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+12F8 text22 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1300 text22 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1306 text22 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+130A text22 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+1312 text22 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+A9E text21 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+A9E text21 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AA8 text21 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AAA text21 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AB2 text21 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AC2 text21 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AC4 text21 CODE >543:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AC4 text21 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AC8 text21 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+ACA text21 CODE >817:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+ACA text21 CODE >818:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+ACE text21 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AD0 text21 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AF2 text21 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AF2 text21 CODE >1286:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B0A text21 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B10 text21 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B30 text21 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B3A text21 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B3E text21 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B40 text21 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B88 text21 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B98 text21 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B98 text21 CODE >1525:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+BA0 text21 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+BB8 text21 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1138 text20 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+1138 text20 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+1140 text20 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+1142 text20 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+1146 text20 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+1156 text20 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+1156 text20 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+115A text20 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+115E text20 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+115E text20 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcat.c
+138C text19 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+138C text19 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+1394 text19 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+1396 text19 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+139A text19 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+139E text19 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+139E text19 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strcpy.c
+1190 text18 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+1190 text18 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+1198 text18 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+119A text18 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+119E text18 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+119E text18 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+11C4 text18 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\strlen.c
+13E8 text17 CODE >305:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+13EA text17 CODE >307:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+13F4 text17 CODE >308:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1410 text17 CODE >309:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+E38 text16 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E38 text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E4A text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E56 text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E5A text16 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E5C text16 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E66 text16 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E68 text16 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E68 text16 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E6C text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E76 text16 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E8A text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E9A text16 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E9C text16 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+E9C text16 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+EA6 text16 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+EAA text16 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+EBA text16 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+FBE text15 CODE >290:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+FC2 text15 CODE >292:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+FCC text15 CODE >293:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1000 text15 CODE >294:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+101A text15 CODE >295:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+101E text15 CODE >296:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CE0 text14 CODE >101:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+CE0 text14 CODE >103:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D10 text14 CODE >104:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D16 text14 CODE >105:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D2A text14 CODE >106:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D3E text14 CODE >107:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D52 text14 CODE >108:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D5E text14 CODE >109:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D76 text14 CODE >110:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D8C text14 CODE >111:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+D98 text14 CODE >112:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DA4 text14 CODE >113:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+153A text13 CODE >2170:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+153A text13 CODE >2172:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+13BC text12 CODE >298:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+13BE text12 CODE >300:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+13C8 text12 CODE >301:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+13E4 text12 CODE >302:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+DA6 text11 CODE >76:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DA6 text11 CODE >78:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DAC text11 CODE >81:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DC2 text11 CODE >82:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DC8 text11 CODE >83:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DDE text11 CODE >84:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DE2 text11 CODE >85:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DE8 text11 CODE >86:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DE8 text11 CODE >88:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+DF2 text11 CODE >89:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E0A text11 CODE >90:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E12 text11 CODE >91:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E18 text11 CODE >92:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E1C text11 CODE >93:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E1C text11 CODE >94:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E28 text11 CODE >95:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E2E text11 CODE >96:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+E2E text11 CODE >98:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+1494 text10 CODE >115:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+1494 text10 CODE >117:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+149E text10 CODE >119:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14A6 text10 CODE >120:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14A6 text10 CODE >121:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14B0 text10 CODE >123:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14B8 text10 CODE >116:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+14BA text10 CODE >225:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+BC6 text9 CODE >1939:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+BCA text9 CODE >1943:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+BFE text9 CODE >1944:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+C32 text9 CODE >1945:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+C66 text9 CODE >1946:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+C7E text9 CODE >1947:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CB2 text9 CODE >1948:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CBE text9 CODE >1949:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CC2 text9 CODE >1950:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CC6 text9 CODE >1951:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CCC text9 CODE >1953:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CD0 text9 CODE >1954:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CD4 text9 CODE >1955:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CD6 text9 CODE >1956:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CD6 text9 CODE >1959:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+CDA text9 CODE >1960:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+146A text8 CODE >2151:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+146A text8 CODE >2153:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1480 text8 CODE >2154:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1482 text8 CODE >2155:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1486 text8 CODE >2156:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+148A text8 CODE >2157:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+148C text8 CODE >2158:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+148E text8 CODE >2159:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1490 text8 CODE >2160:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1492 text8 CODE >2161:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1440 text7 CODE >1968:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1440 text7 CODE >1970:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1456 text7 CODE >1975:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1458 text7 CODE >1977:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+145C text7 CODE >1978:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1460 text7 CODE >1979:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1462 text7 CODE >1980:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1464 text7 CODE >1981:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1466 text7 CODE >1982:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1468 text7 CODE >1983:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+860 text6 CODE >1342:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+862 text6 CODE >1344:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+866 text6 CODE >1346:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+868 text6 CODE >1349:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+872 text6 CODE >1350:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+87C text6 CODE >1351:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+886 text6 CODE >1352:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+890 text6 CODE >1353:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+89A text6 CODE >1354:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8A4 text6 CODE >1355:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8AE text6 CODE >1357:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8B8 text6 CODE >1360:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8C2 text6 CODE >1361:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8CC text6 CODE >1362:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8D6 text6 CODE >1363:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8E0 text6 CODE >1364:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8EA text6 CODE >1365:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8F4 text6 CODE >1366:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+8FE text6 CODE >1367:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+908 text6 CODE >1369:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+912 text6 CODE >1370:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+91C text6 CODE >1371:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+926 text6 CODE >1374:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+930 text6 CODE >1376:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+93A text6 CODE >1377:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+944 text6 CODE >1378:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+94E text6 CODE >1379:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+958 text6 CODE >1381:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+962 text6 CODE >1382:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+96C text6 CODE >1383:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+976 text6 CODE >1384:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+980 text6 CODE >1385:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+98A text6 CODE >1386:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+994 text6 CODE >1387:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+99E text6 CODE >1388:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+9A8 text6 CODE >1390:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+9B2 text6 CODE >1391:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+9BC text6 CODE >1392:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+9C4 text6 CODE >1394:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+9C6 text6 CODE >1346:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+A9A text6 CODE >1394:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+A9A text6 CODE >1395:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+A9C text6 CODE >1396:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+14BC text5 CODE >360:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+14BE text5 CODE >371:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+14D6 text5 CODE >372:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+14DC text5 CODE >379:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2CC text4 CODE >388:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2CE text4 CODE >390:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2D0 text4 CODE >392:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2D0 text4 CODE >393:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2D6 text4 CODE >395:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2D8 text4 CODE >396:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2DA text4 CODE >397:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2DC text4 CODE >398:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2E4 text4 CODE >400:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2E6 text4 CODE >401:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2E8 text4 CODE >402:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2EA text4 CODE >403:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2F2 text4 CODE >405:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2F4 text4 CODE >406:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2FA text4 CODE >407:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2FC text4 CODE >408:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2FC text4 CODE >410:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+2FE text4 CODE >411:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+300 text4 CODE >413:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+302 text4 CODE >414:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+302 text4 CODE >415:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+308 text4 CODE >417:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+30A text4 CODE >418:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+30C text4 CODE >419:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+30E text4 CODE >420:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+316 text4 CODE >422:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+318 text4 CODE >423:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+31A text4 CODE >424:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+31C text4 CODE >425:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+324 text4 CODE >427:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+326 text4 CODE >428:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+32C text4 CODE >429:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+32E text4 CODE >430:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+32E text4 CODE >432:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+330 text4 CODE >433:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+332 text4 CODE >435:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+334 text4 CODE >436:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+334 text4 CODE >437:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+33A text4 CODE >439:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+33C text4 CODE >440:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+33E text4 CODE >441:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+340 text4 CODE >442:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+348 text4 CODE >444:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+34A text4 CODE >445:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+34C text4 CODE >446:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+34E text4 CODE >447:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+356 text4 CODE >449:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+358 text4 CODE >450:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+35E text4 CODE >451:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+360 text4 CODE >452:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+360 text4 CODE >454:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+362 text4 CODE >455:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+364 text4 CODE >457:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+366 text4 CODE >458:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+366 text4 CODE >459:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+36C text4 CODE >461:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+36E text4 CODE >462:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+370 text4 CODE >463:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+372 text4 CODE >464:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+37A text4 CODE >466:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+37C text4 CODE >467:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+37E text4 CODE >468:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+380 text4 CODE >469:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+388 text4 CODE >471:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+38A text4 CODE >472:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+390 text4 CODE >473:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+392 text4 CODE >474:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+392 text4 CODE >476:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+394 text4 CODE >477:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+396 text4 CODE >479:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+398 text4 CODE >483:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+398 text4 CODE >484:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+39E text4 CODE >486:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3A0 text4 CODE >487:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3A2 text4 CODE >488:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3A4 text4 CODE >489:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3AC text4 CODE >491:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3AE text4 CODE >492:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3B0 text4 CODE >493:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3B2 text4 CODE >494:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3B2 text4 CODE >496:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3B4 text4 CODE >497:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3B6 text4 CODE >499:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3B8 text4 CODE >502:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3B8 text4 CODE >503:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3BE text4 CODE >505:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3C0 text4 CODE >506:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3C2 text4 CODE >507:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3C4 text4 CODE >508:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3CC text4 CODE >510:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3CE text4 CODE >511:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3D0 text4 CODE >512:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3D2 text4 CODE >513:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3DA text4 CODE >515:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3DC text4 CODE >516:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3E2 text4 CODE >517:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3E4 text4 CODE >518:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3E4 text4 CODE >520:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3E6 text4 CODE >521:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3E8 text4 CODE >523:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3EA text4 CODE >524:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3EA text4 CODE >525:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3F0 text4 CODE >527:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3F2 text4 CODE >528:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3F4 text4 CODE >529:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3F6 text4 CODE >530:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+3FE text4 CODE >532:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+400 text4 CODE >533:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+402 text4 CODE >534:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+404 text4 CODE >535:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+404 text4 CODE >537:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+406 text4 CODE >538:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+408 text4 CODE >540:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+40A text4 CODE >543:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+40A text4 CODE >544:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+410 text4 CODE >546:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+412 text4 CODE >547:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+414 text4 CODE >548:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+416 text4 CODE >549:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+41E text4 CODE >551:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+420 text4 CODE >552:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+422 text4 CODE >553:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+424 text4 CODE >554:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+424 text4 CODE >556:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+426 text4 CODE >557:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+428 text4 CODE >559:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+42A text4 CODE >561:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+42A text4 CODE >562:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+430 text4 CODE >564:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+432 text4 CODE >565:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+434 text4 CODE >566:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+436 text4 CODE >567:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+43E text4 CODE >569:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+440 text4 CODE >570:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+442 text4 CODE >571:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+444 text4 CODE >572:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+444 text4 CODE >574:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+446 text4 CODE >575:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+448 text4 CODE >577:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+44A text4 CODE >578:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+44A text4 CODE >579:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+450 text4 CODE >581:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+452 text4 CODE >582:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+454 text4 CODE >583:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+456 text4 CODE >584:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+45E text4 CODE >586:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+460 text4 CODE >587:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+462 text4 CODE >588:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+464 text4 CODE >589:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+464 text4 CODE >591:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+466 text4 CODE >592:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+468 text4 CODE >594:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+46A text4 CODE >595:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+46A text4 CODE >596:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+470 text4 CODE >598:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+472 text4 CODE >599:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+474 text4 CODE >600:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+476 text4 CODE >601:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+47E text4 CODE >603:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+480 text4 CODE >604:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+482 text4 CODE >605:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+484 text4 CODE >606:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+484 text4 CODE >608:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+486 text4 CODE >609:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+488 text4 CODE >611:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+48A text4 CODE >612:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+48A text4 CODE >613:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+490 text4 CODE >615:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+492 text4 CODE >616:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+494 text4 CODE >617:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+496 text4 CODE >618:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+49E text4 CODE >620:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4A0 text4 CODE >621:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4A2 text4 CODE >622:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4A4 text4 CODE >623:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4A4 text4 CODE >625:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4A6 text4 CODE >626:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4A8 text4 CODE >628:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4AA text4 CODE >629:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4AA text4 CODE >630:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4B0 text4 CODE >632:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4B2 text4 CODE >633:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4B4 text4 CODE >634:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4B6 text4 CODE >635:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4BE text4 CODE >637:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4C0 text4 CODE >638:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4C2 text4 CODE >639:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4C4 text4 CODE >640:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4C4 text4 CODE >642:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4C6 text4 CODE >643:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4C8 text4 CODE >645:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4CA text4 CODE >646:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4CA text4 CODE >647:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4D0 text4 CODE >649:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4D2 text4 CODE >650:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4D4 text4 CODE >651:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4D6 text4 CODE >652:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4DE text4 CODE >654:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4E0 text4 CODE >655:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4E2 text4 CODE >656:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4E4 text4 CODE >657:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4E4 text4 CODE >659:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4E6 text4 CODE >660:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4E8 text4 CODE >662:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4EA text4 CODE >663:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4EA text4 CODE >664:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4F0 text4 CODE >666:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4F2 text4 CODE >667:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4F4 text4 CODE >668:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4F6 text4 CODE >669:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+4FE text4 CODE >671:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+500 text4 CODE >672:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+502 text4 CODE >673:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+504 text4 CODE >674:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+504 text4 CODE >676:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+506 text4 CODE >677:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+508 text4 CODE >679:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+50A text4 CODE >680:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+50A text4 CODE >681:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+510 text4 CODE >683:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+512 text4 CODE >684:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+514 text4 CODE >685:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+516 text4 CODE >686:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+51E text4 CODE >688:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+520 text4 CODE >689:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+522 text4 CODE >690:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+524 text4 CODE >691:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+524 text4 CODE >693:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+526 text4 CODE >694:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+528 text4 CODE >696:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+52A text4 CODE >697:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+52A text4 CODE >698:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+530 text4 CODE >700:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+532 text4 CODE >701:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+534 text4 CODE >702:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+536 text4 CODE >703:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+53E text4 CODE >705:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+540 text4 CODE >706:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+542 text4 CODE >707:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+544 text4 CODE >708:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+544 text4 CODE >710:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+546 text4 CODE >711:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+548 text4 CODE >713:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+54A text4 CODE >714:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+54A text4 CODE >715:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+550 text4 CODE >717:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+552 text4 CODE >718:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+554 text4 CODE >719:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+556 text4 CODE >720:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+55E text4 CODE >722:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+560 text4 CODE >723:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+562 text4 CODE >724:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+564 text4 CODE >725:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+564 text4 CODE >727:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+566 text4 CODE >728:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+568 text4 CODE >730:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+56A text4 CODE >731:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+56A text4 CODE >732:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+570 text4 CODE >734:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+572 text4 CODE >735:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+574 text4 CODE >736:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+576 text4 CODE >737:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+57E text4 CODE >739:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+580 text4 CODE >740:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+582 text4 CODE >741:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+584 text4 CODE >742:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+584 text4 CODE >744:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+586 text4 CODE >745:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+588 text4 CODE >747:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+58A text4 CODE >751:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+58A text4 CODE >752:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+590 text4 CODE >754:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+592 text4 CODE >755:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+594 text4 CODE >756:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+596 text4 CODE >757:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+59E text4 CODE >759:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5A0 text4 CODE >760:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5A2 text4 CODE >761:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5A4 text4 CODE >762:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5A4 text4 CODE >764:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5A6 text4 CODE >765:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5A8 text4 CODE >767:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5AA text4 CODE >768:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5AA text4 CODE >769:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5B0 text4 CODE >771:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5B2 text4 CODE >772:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5B4 text4 CODE >773:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5B6 text4 CODE >774:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5BE text4 CODE >776:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5C0 text4 CODE >777:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5C2 text4 CODE >778:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5C4 text4 CODE >779:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5C4 text4 CODE >781:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5C6 text4 CODE >782:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5C8 text4 CODE >784:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5CA text4 CODE >785:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5CA text4 CODE >786:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5D0 text4 CODE >788:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5D2 text4 CODE >789:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5D4 text4 CODE >790:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5D6 text4 CODE >791:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5DE text4 CODE >793:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5E0 text4 CODE >794:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5E2 text4 CODE >795:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5E4 text4 CODE >796:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5E4 text4 CODE >798:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5E6 text4 CODE >799:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5E8 text4 CODE >801:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5EA text4 CODE >804:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5EA text4 CODE >805:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5F0 text4 CODE >807:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5F2 text4 CODE >808:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5F4 text4 CODE >809:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5F6 text4 CODE >810:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+5FE text4 CODE >812:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+600 text4 CODE >813:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+602 text4 CODE >814:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+604 text4 CODE >815:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+604 text4 CODE >817:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+606 text4 CODE >818:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+608 text4 CODE >820:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+60A text4 CODE >821:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+60A text4 CODE >822:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+610 text4 CODE >824:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+612 text4 CODE >825:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+614 text4 CODE >826:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+616 text4 CODE >827:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+61E text4 CODE >829:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+620 text4 CODE >830:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+622 text4 CODE >831:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+624 text4 CODE >832:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+624 text4 CODE >834:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+626 text4 CODE >835:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+628 text4 CODE >837:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+62A text4 CODE >838:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+62A text4 CODE >839:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+630 text4 CODE >841:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+632 text4 CODE >842:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+634 text4 CODE >843:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+636 text4 CODE >844:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+63E text4 CODE >846:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+640 text4 CODE >847:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+642 text4 CODE >848:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+644 text4 CODE >849:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+644 text4 CODE >851:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+646 text4 CODE >852:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+648 text4 CODE >854:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+64A text4 CODE >855:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+64A text4 CODE >856:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+650 text4 CODE >858:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+652 text4 CODE >859:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+654 text4 CODE >860:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+656 text4 CODE >861:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+65E text4 CODE >863:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+660 text4 CODE >864:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+662 text4 CODE >865:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+664 text4 CODE >866:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+664 text4 CODE >868:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+666 text4 CODE >869:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+668 text4 CODE >871:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+66A text4 CODE >872:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+66A text4 CODE >873:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+670 text4 CODE >875:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+672 text4 CODE >876:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+674 text4 CODE >877:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+676 text4 CODE >878:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+67E text4 CODE >880:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+680 text4 CODE >881:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+682 text4 CODE >882:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+684 text4 CODE >883:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+684 text4 CODE >885:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+686 text4 CODE >886:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+688 text4 CODE >888:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+68A text4 CODE >889:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+68A text4 CODE >890:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+690 text4 CODE >892:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+692 text4 CODE >893:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+694 text4 CODE >894:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+696 text4 CODE >895:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+69E text4 CODE >897:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6A0 text4 CODE >898:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6A2 text4 CODE >899:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6A4 text4 CODE >900:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6A4 text4 CODE >902:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6A6 text4 CODE >903:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6A8 text4 CODE >905:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6AA text4 CODE >906:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6AA text4 CODE >907:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6B0 text4 CODE >909:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6B2 text4 CODE >910:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6B4 text4 CODE >911:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6B6 text4 CODE >912:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6BE text4 CODE >914:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6C0 text4 CODE >915:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6C2 text4 CODE >916:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6C4 text4 CODE >917:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6C4 text4 CODE >919:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6C6 text4 CODE >920:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6C8 text4 CODE >922:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6CA text4 CODE >923:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6CA text4 CODE >924:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6D0 text4 CODE >926:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6D2 text4 CODE >927:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6D4 text4 CODE >928:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6D6 text4 CODE >929:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6DE text4 CODE >931:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6E0 text4 CODE >932:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6E2 text4 CODE >933:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6E4 text4 CODE >934:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6E4 text4 CODE >936:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6E6 text4 CODE >937:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6E8 text4 CODE >939:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6EA text4 CODE >940:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6EA text4 CODE >941:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6F0 text4 CODE >943:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6F2 text4 CODE >944:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6F4 text4 CODE >945:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6F6 text4 CODE >946:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+6FE text4 CODE >948:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+700 text4 CODE >949:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+702 text4 CODE >950:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+704 text4 CODE >951:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+704 text4 CODE >953:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+706 text4 CODE >954:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+708 text4 CODE >956:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+70A text4 CODE >957:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+70A text4 CODE >958:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+710 text4 CODE >960:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+712 text4 CODE >961:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+714 text4 CODE >962:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+716 text4 CODE >963:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+71E text4 CODE >965:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+720 text4 CODE >966:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+722 text4 CODE >967:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+724 text4 CODE >968:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+724 text4 CODE >970:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+726 text4 CODE >971:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+728 text4 CODE >973:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+72A text4 CODE >974:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+72A text4 CODE >975:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+730 text4 CODE >977:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+732 text4 CODE >978:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+734 text4 CODE >979:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+736 text4 CODE >980:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+73E text4 CODE >982:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+740 text4 CODE >983:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+742 text4 CODE >984:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+744 text4 CODE >985:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+744 text4 CODE >987:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+746 text4 CODE >988:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+748 text4 CODE >990:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+74A text4 CODE >991:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+74A text4 CODE >992:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+750 text4 CODE >994:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+752 text4 CODE >995:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+754 text4 CODE >996:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+756 text4 CODE >997:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+75E text4 CODE >999:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+760 text4 CODE >1000:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+762 text4 CODE >1001:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+764 text4 CODE >1002:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+764 text4 CODE >1004:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+766 text4 CODE >1005:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+768 text4 CODE >1007:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+76A text4 CODE >1008:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+76A text4 CODE >1009:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+770 text4 CODE >1011:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+772 text4 CODE >1012:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+774 text4 CODE >1013:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+776 text4 CODE >1014:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+77E text4 CODE >1016:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+780 text4 CODE >1017:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+782 text4 CODE >1018:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+784 text4 CODE >1019:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+784 text4 CODE >1021:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+786 text4 CODE >1022:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+788 text4 CODE >1335:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+78A text4 CODE >390:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+10DC text3 CODE >20:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+10DC text3 CODE >21:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+10F2 text3 CODE >22:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+1108 text3 CODE >23:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+1112 text3 CODE >24:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+111E text3 CODE >25:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+112A text3 CODE >26:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\newmain.c
+152A text2 CODE >251:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+152A text2 CODE >254:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+152C text2 CODE >255:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1530 text2 CODE >257:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1532 text2 CODE >258:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1542 text1 CODE >313:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1542 text1 CODE >336:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1512 text0 CODE >341:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1512 text0 CODE >343:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1516 text0 CODE >344:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+151A text0 CODE >345:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+151A text0 CODE >347:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+151C text0 CODE >348:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1520 text0 CODE >349:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1524 text0 CODE >350:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+1528 text0 CODE >345:C:\Users\M93z\Google Drive\07_KENAIKAN PANGKAT\INOVASI\CODE\ESP8266.X\picuno.c
+F40 cinit CODE >1910:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F40 cinit CODE >1912:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F40 cinit CODE >1915:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F40 cinit CODE >2213:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F42 cinit CODE >2214:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F44 cinit CODE >2215:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F46 cinit CODE >2216:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F48 cinit CODE >2217:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F4A cinit CODE >2218:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F4C cinit CODE >2219:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F50 cinit CODE >2220:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F54 cinit CODE >2221:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F54 cinit CODE >2222:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F56 cinit CODE >2223:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F5A cinit CODE >2224:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F5C cinit CODE >2225:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F5E cinit CODE >2226:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F60 cinit CODE >2230:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F62 cinit CODE >2231:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F64 cinit CODE >2232:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F66 cinit CODE >2233:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F68 cinit CODE >2234:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F6A cinit CODE >2235:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F6C cinit CODE >2236:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F70 cinit CODE >2237:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F74 cinit CODE >2238:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F74 cinit CODE >2239:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F76 cinit CODE >2240:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F7A cinit CODE >2241:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F7C cinit CODE >2242:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F7E cinit CODE >2243:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F80 cinit CODE >2247:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F84 cinit CODE >2248:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F86 cinit CODE >2249:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F86 cinit CODE >2250:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F88 cinit CODE >2251:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F8A cinit CODE >2252:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F8C cinit CODE >2255:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F90 cinit CODE >2256:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F92 cinit CODE >2257:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F92 cinit CODE >2258:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F94 cinit CODE >2259:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F96 cinit CODE >2260:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F98 cinit CODE >2263:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F9C cinit CODE >2264:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F9E cinit CODE >2265:C:\Users\M93z\AppData\Local\Temp\s5ks.
+F9E cinit CODE >2266:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FA0 cinit CODE >2267:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FA2 cinit CODE >2268:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FA4 cinit CODE >2271:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FA8 cinit CODE >2272:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FAA cinit CODE >2273:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FAA cinit CODE >2274:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FAC cinit CODE >2275:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FAE cinit CODE >2276:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FB0 cinit CODE >2282:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FB0 cinit CODE >2284:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FB2 cinit CODE >2285:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FB4 cinit CODE >2287:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FB6 cinit CODE >2288:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FB8 cinit CODE >2289:C:\Users\M93z\AppData\Local\Temp\s5ks.
+FBA cinit CODE >2290:C:\Users\M93z\AppData\Local\Temp\s5ks.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwmod@counter 44 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\ESP8266.X.production.obj
+__Lmediumconst 7DC4 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+_uart2_cr_cnt A6 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hspace_1 260 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\ESP8266.X.production.obj
+init@i 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_timerUp 13BC 0 CODE 0 text12 dist/default/production\ESP8266.X.production.obj
+_PWM2CON F65 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PWM3CON F5C 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\ESP8266.X.production.obj
+__mediumconst 7DC4 0 MEDIUMCONST 0 mediumconst C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+delay@i 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ESP8266.X.production.obj
+_AT 7E55 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+_cc AE 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_ip E3 0 BANK0 1 dataBANK0 dist/default/production\ESP8266.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\ESP8266.X.production.obj
+_LATA F89 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATD F8C 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATE F8D 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PEIE 7F96 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RCIE 7CED 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RCIF 7CF5 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RCIP 7CFD 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TMR2 FBC 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TXIE 7CEC 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TXIF 7CF4 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TXIP 7CFC 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+_init EBC 0 CODE 0 text33 dist/default/production\ESP8266.X.production.obj
+_loop 1494 0 CODE 0 text10 dist/default/production\ESP8266.X.production.obj
+_main 1512 0 CODE 0 text0 dist/default/production\ESP8266.X.production.obj
+_pass E5 0 BANK0 1 dataBANK0 dist/default/production\ESP8266.X.production.obj
+_port E1 0 BANK0 1 dataBANK0 dist/default/production\ESP8266.X.production.obj
+_ssid E7 0 BANK0 1 dataBANK0 dist/default/production\ESP8266.X.production.obj
+_sync 152A 0 CODE 0 text2 dist/default/production\ESP8266.X.production.obj
+_task 1542 0 CODE 0 text1 dist/default/production\ESP8266.X.production.obj
+_temp 1B3 0 BANK1 1 bssBANK1 dist/default/production\ESP8266.X.production.obj
+btemp 49 0 COMRAM 1 temp dist/default/production\ESP8266.X.production.obj
+__size_of_Serial2_begin 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+start 2C8 0 CODE 0 init C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+__end_of_timerBusy 1414 0 CODE 0 text17 dist/default/production\ESP8266.X.production.obj
+__size_of_init 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_loop 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_sync 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_task 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__size_of_timerBusy 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_uart1_cr_cnt A9 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_uart2_lf_cnt A5 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\ESP8266.X.production.obj
+__Hpowerup 2C8 0 CODE 0 powerup dist/default/production\ESP8266.X.production.obj
+cipSend@len 1F4 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+Serial_begin@speed 1F0 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+_timerBusy 13E8 0 CODE 0 text17 dist/default/production\ESP8266.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\ESP8266.X.production.obj
+_esp8266_chk DA6 0 CODE 0 text11 dist/default/production\ESP8266.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+intlevel0 0 0 CODE 0 text C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+intlevel1 0 0 CODE 0 text C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+intlevel2 0 0 CODE 0 text C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+intlevel3 0 0 CODE 0 text C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+strcat@from 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_Serial2_begin 1494 0 CODE 0 text8 dist/default/production\ESP8266.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ESP8266.X.production.obj
+wtemp6 4A 0 COMRAM 1 temp dist/default/production\ESP8266.X.production.obj
+_uart2_rx_cnt 19 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_uart2_rx_pos 1A 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+delay@ms 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+esp8266_print@data 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\ESP8266.X.production.obj
+_uart1_lf_cnt A8 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_uart2_tx_cnt 1B 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_uart2_tx_pos 1C 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\ESP8266.X.production.obj
+__pidataCOMRAM 1536 0 CODE 0 idataCOMRAM dist/default/production\ESP8266.X.production.obj
+timerSet@index FF 0 BANK0 1 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+timerSet@value 1E5 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ANSELA F38 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ANSELB F39 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ANSELC F3A 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ANSELD F3B 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ANSELE F3C 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\ESP8266.X.production.obj
+_CCPR2H F68 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_CCPR2L F67 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_CCPR3H F5F 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_CCPR3L F5E 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_Serial2_available 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\ESP8266.X.production.obj
+_uart1_rx_cnt 1E 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_uart1_rx_pos 1F 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_digitalRead A9E 0 CODE 0 text6 dist/default/production\ESP8266.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ESP8266.X.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hmediumconst 7F36 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+_uart1_tx_cnt 20 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_uart1_tx_pos 21 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__Hintcodelo 2C8 0 CODE 0 intcodelo dist/default/production\ESP8266.X.production.obj
+___lwmod@divisor FC 0 BANK0 1 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+__end_of___lldiv EBC 0 CODE 0 text16 dist/default/production\ESP8266.X.production.obj
+__end_of___lwdiv 1234 0 CODE 0 text23 dist/default/production\ESP8266.X.production.obj
+__end_of___lwmod 1314 0 CODE 0 text22 dist/default/production\ESP8266.X.production.obj
+?_strlen 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__size_of_pinMode 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_dpowers 7DC5 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+___lwdiv@quotient 42 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__size_of_delay 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_esp8266_print 14DE 0 CODE 0 text24 dist/default/production\ESP8266.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\ESP8266.X.production.obj
+__size_of_setup 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_Serial_putc 1234 0 CODE 0 text26 dist/default/production\ESP8266.X.production.obj
+_Serial_read 1350 0 CODE 0 text31 dist/default/production\ESP8266.X.production.obj
+__end_of_Serial2_println 10DC 0 CODE 0 text27 dist/default/production\ESP8266.X.production.obj
+_Serial_println 1020 0 CODE 0 text25 dist/default/production\ESP8266.X.production.obj
+___lwmod@dividend FA 0 BANK0 1 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+___lldiv@counter FE 0 BANK0 1 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+__Lintcodelo 2C8 0 CODE 0 intcodelo dist/default/production\ESP8266.X.production.obj
+start_initialization F40 0 CODE 0 cinit dist/default/production\ESP8266.X.production.obj
+analogInput@d 40 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_analogInput 14DE 0 CODE 0 text5 dist/default/production\ESP8266.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ESP8266.X.production.obj
+_PLLRDY 7E97 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_OneSec 47 0 COMRAM 1 dataCOMRAM dist/default/production\ESP8266.X.production.obj
+_TRISAbits F92 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TRISBbits F93 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TRISCbits F94 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TRISDbits F95 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TRISEbits F96 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+___lldiv@dividend 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+Serial_println@str 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RCREG1 FAE 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RCREG2 F74 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RCSTA2 F71 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__end_of_AT 7E59 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+pinMode@pin 42 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_SPBRG1 FAF 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_SPBRG2 F75 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_SPBRGH FB0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__pcstackBANK0 FA 0 BANK0 1 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+__pcstackBANK1 1E5 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+_SSPADD FC8 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_cipSend 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TMR0IE 7F95 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TMR0IF 7F92 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TMR0IP 7F8A 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TXREG2 F73 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TXSTA2 F72 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_keypad_col1 15 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_col2 14 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_col3 13 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_col4 12 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_mode 16 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_row1 11 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_row2 10 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_row3 F 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_keypad_row4 E 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_pass64 7E00 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+_TmrSec 46 0 COMRAM 1 dataCOMRAM dist/default/production\ESP8266.X.production.obj
+digitalRead@di 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_sendTo 7E31 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\ESP8266.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\ESP8266.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\ESP8266.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\ESP8266.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\ESP8266.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\ESP8266.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\ESP8266.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\ESP8266.X.production.obj
+__end_of_strcat 1190 0 CODE 0 text20 dist/default/production\ESP8266.X.production.obj
+__end_of_strcpy 13BC 0 CODE 0 text19 dist/default/production\ESP8266.X.production.obj
+__end_of_strlen 11E2 0 CODE 0 text18 dist/default/production\ESP8266.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\ESP8266.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\ESP8266.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\ESP8266.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\ESP8266.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\ESP8266.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\ESP8266.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\ESP8266.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\ESP8266.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\ESP8266.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\ESP8266.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\ESP8266.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\ESP8266.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\ESP8266.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\ESP8266.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\ESP8266.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\ESP8266.X.production.obj
+___lwdiv@counter 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_Serial2_println 107E 0 CODE 0 text27 dist/default/production\ESP8266.X.production.obj
+_InterruptHandlerHigh 8 0 CODE 0 intcode dist/default/production\ESP8266.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ESP8266.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\ESP8266.X.production.obj
+_Serial2_putc 1282 0 CODE 0 text28 dist/default/production\ESP8266.X.production.obj
+_Serial2_read 1314 0 CODE 0 text30 dist/default/production\ESP8266.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+InterruptHandlerHigh@dd 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_Serial_println 107E 0 CODE 0 text25 dist/default/production\ESP8266.X.production.obj
+__end_of_sprintf BC6 0 CODE 0 text21 dist/default/production\ESP8266.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\ESP8266.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\ESP8266.X.production.obj
+_TmrRxd1 23 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_TmrRxd2 22 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_Serial2_available 153E 0 CODE 0 text13 dist/default/production\ESP8266.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\ESP8266.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\ESP8266.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\ESP8266.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\ESP8266.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\ESP8266.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\ESP8266.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\ESP8266.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\ESP8266.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\ESP8266.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\ESP8266.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\ESP8266.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\ESP8266.X.production.obj
+_uart1_rx_char 1D 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\ESP8266.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\ESP8266.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\ESP8266.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\ESP8266.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\ESP8266.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\ESP8266.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\ESP8266.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\ESP8266.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\ESP8266.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\ESP8266.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\ESP8266.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\ESP8266.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\ESP8266.X.production.obj
+timerUp@index 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\ESP8266.X.production.obj
+__end_of_pinMode 860 0 CODE 0 text4 dist/default/production\ESP8266.X.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PORTBbits F81 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PORTDbits F83 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PORTEbits F84 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_mailContent EA 0 BANK0 1 dataBANK0 dist/default/production\ESP8266.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\ESP8266.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\ESP8266.X.production.obj
+__Hinit 2CC 0 CODE 0 init dist/default/production\ESP8266.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\ESP8266.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\ESP8266.X.production.obj
+__Htemp 4A 0 COMRAM 1 temp dist/default/production\ESP8266.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\ESP8266.X.production.obj
+InterruptHandlerHigh@i 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_subject 7E43 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\ESP8266.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\ESP8266.X.production.obj
+__Linit 2C8 0 CODE 0 init dist/default/production\ESP8266.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\ESP8266.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\ESP8266.X.production.obj
+__Ltemp 49 0 COMRAM 1 temp dist/default/production\ESP8266.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\ESP8266.X.production.obj
+__size_of_timerUp 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+int$flags 49 0 COMRAM 1 temp dist/default/production\ESP8266.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\ESP8266.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\ESP8266.X.production.obj
+_PR2 FBB 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__S1 260 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_buf AF 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__size_of_esp8266_print 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_digitalRead 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+Serial2_putc@d 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+Serial2_putc@p 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_chkBuf 160 0 BANK1 1 bssBANK1 dist/default/production\ESP8266.X.production.obj
+Serial2_begin@speed 1F0 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+__size_of_Serial2_putc 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_Serial2_read 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+Serial2_read@d 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_esp8266_chk E38 0 CODE 0 text11 dist/default/production\ESP8266.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ESP8266.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\ESP8266.X.production.obj
+_i2c_error_flag 95 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+sprintf@val 1EE 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+_ECCP2AS F64 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_ECCP3AS F5B 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TimerArray 81 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+strcat@cp 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+strcat@to 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+strcpy@cp 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+strcpy@to 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_cols 97 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_lcd_disp 45 0 COMRAM 1 dataCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_mode C 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_cipSend DA6 0 CODE 0 text14 dist/default/production\ESP8266.X.production.obj
+_lcd_rows 96 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_lcd_temp 98 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_uart1_rxbuf 100 0 BANK1 1 bssBANK1 dist/default/production\ESP8266.X.production.obj
+_uart1_txbuf 60 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\ESP8266.X.production.obj
+___lldiv@divisor 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_TimerFlag 17 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\ESP8266.X.production.obj
+strlen@s 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\ESP8266.X.production.obj
+__end_of_esp8266_print 14F8 0 CODE 0 text24 dist/default/production\ESP8266.X.production.obj
+_CCPTMRS0bits F49 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__pdataBANK0 E1 0 BANK0 1 dataBANK0 dist/default/production\ESP8266.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_uart_brg_set BC6 0 CODE 0 text9 dist/default/production\ESP8266.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\ESP8266.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\ESP8266.X.production.obj
+__LbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\ESP8266.X.production.obj
+__end_of_Serial2_putc 12D0 0 CODE 0 text28 dist/default/production\ESP8266.X.production.obj
+__end_of_Serial2_read 1350 0 CODE 0 text30 dist/default/production\ESP8266.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\ESP8266.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\ESP8266.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\ESP8266.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\ESP8266.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\ESP8266.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\ESP8266.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\ESP8266.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\ESP8266.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\ESP8266.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\ESP8266.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\ESP8266.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\ESP8266.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\ESP8266.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\ESP8266.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\ESP8266.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\ESP8266.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\ESP8266.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\ESP8266.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\ESP8266.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\ESP8266.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\ESP8266.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\ESP8266.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\ESP8266.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\ESP8266.X.production.obj
+_kstate 25 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+esp8266_chk@fOld E9 0 BANK0 1 dataBANK0 dist/default/production\ESP8266.X.production.obj
+_lcd_d0 9 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_d1 8 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_d2 7 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_d3 6 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_d4 5 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_d5 4 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_d6 3 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_d7 2 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_en A 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_lcd_rs B 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__size_of_analogInput 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PIE3bits FA3 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+sprintf@flag 1EB 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+__size_of_Serial2_println 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+sprintf@prec 1F0 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+uart_brg_set@speed 1E5 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+__ptext10 1494 0 CODE 0 text10 dist/default/production\ESP8266.X.production.obj
+__ptext11 DA6 0 CODE 0 text11 dist/default/production\ESP8266.X.production.obj
+__ptext12 13BC 0 CODE 0 text12 dist/default/production\ESP8266.X.production.obj
+__ptext13 153A 0 CODE 0 text13 dist/default/production\ESP8266.X.production.obj
+__ptext14 CE0 0 CODE 0 text14 dist/default/production\ESP8266.X.production.obj
+__ptext15 FBE 0 CODE 0 text15 dist/default/production\ESP8266.X.production.obj
+__ptext16 E38 0 CODE 0 text16 dist/default/production\ESP8266.X.production.obj
+__ptext17 13E8 0 CODE 0 text17 dist/default/production\ESP8266.X.production.obj
+__ptext18 1190 0 CODE 0 text18 dist/default/production\ESP8266.X.production.obj
+__ptext19 138C 0 CODE 0 text19 dist/default/production\ESP8266.X.production.obj
+__ptext20 1138 0 CODE 0 text20 dist/default/production\ESP8266.X.production.obj
+__ptext21 A9E 0 CODE 0 text21 dist/default/production\ESP8266.X.production.obj
+__ptext22 12D0 0 CODE 0 text22 dist/default/production\ESP8266.X.production.obj
+__ptext23 11E2 0 CODE 0 text23 dist/default/production\ESP8266.X.production.obj
+__ptext24 14DE 0 CODE 0 text24 dist/default/production\ESP8266.X.production.obj
+__ptext25 1020 0 CODE 0 text25 dist/default/production\ESP8266.X.production.obj
+__ptext26 1234 0 CODE 0 text26 dist/default/production\ESP8266.X.production.obj
+__ptext27 107E 0 CODE 0 text27 dist/default/production\ESP8266.X.production.obj
+__ptext28 1282 0 CODE 0 text28 dist/default/production\ESP8266.X.production.obj
+__ptext29 1414 0 CODE 0 text29 dist/default/production\ESP8266.X.production.obj
+__ptext30 1314 0 CODE 0 text30 dist/default/production\ESP8266.X.production.obj
+__ptext31 1350 0 CODE 0 text31 dist/default/production\ESP8266.X.production.obj
+__ptext32 153E 0 CODE 0 text32 dist/default/production\ESP8266.X.production.obj
+__ptext33 EBC 0 CODE 0 text33 dist/default/production\ESP8266.X.production.obj
+analogInput@ANx 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+___lldiv E38 0 CODE 0 text16 dist/default/production\ESP8266.X.production.obj
+___lwdiv 11E2 0 CODE 0 text23 dist/default/production\ESP8266.X.production.obj
+___lwmod 12D0 0 CODE 0 text22 dist/default/production\ESP8266.X.production.obj
+strlen@cp 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ESP8266.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\ESP8266.X.production.obj
+_Serial2_available 153A 0 CODE 0 text13 dist/default/production\ESP8266.X.production.obj
+_pass64 7DCF 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+uart_brg_set@com 1ED 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\ESP8266.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\ESP8266.X.production.obj
+_LATAbits F89 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATBbits F8A 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATCbits F8B 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATDbits F8C 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_LATEbits F8D 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\ESP8266.X.production.obj
+_sendTo 7E19 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+___lwdiv@divisor 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_strcat 1138 0 CODE 0 text20 dist/default/production\ESP8266.X.production.obj
+_strcpy 138C 0 CODE 0 text19 dist/default/production\ESP8266.X.production.obj
+_strlen 1190 0 CODE 0 text18 dist/default/production\ESP8266.X.production.obj
+__end_of_timerUp 13E8 0 CODE 0 text12 dist/default/production\ESP8266.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\ESP8266.X.production.obj
+__size_of_uart_brg_set 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+esp8266_chk@f 24 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+stackhi 5FF 0 ABS 0 - C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+stacklo 260 0 ABS 0 - C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+_userID64 7E00 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+pinMode@mode 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\ESP8266.X.production.obj
+_OSCCON2 FD2 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\ESP8266.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\ESP8266.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+strcpy@from 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_Serial_putc 1282 0 CODE 0 text26 dist/default/production\ESP8266.X.production.obj
+__end_of_Serial_read 138C 0 CODE 0 text31 dist/default/production\ESP8266.X.production.obj
+__size_of_timerSet 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_userID64 7E19 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+esp8266_chk@loopHere 1E9 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+end_of_initialization FB0 0 CODE 0 cinit dist/default/production\ESP8266.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\ESP8266.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\ESP8266.X.production.obj
+__end_of_uart_brg_set CE0 0 CODE 0 text9 dist/default/production\ESP8266.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+Serial2_println@str 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+___lwdiv@dividend 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+?___lldiv 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+?___lwdiv 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+?___lwmod FA 0 BANK0 1 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+_PSTR2CON F63 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_PSTR3CON F5A 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\ESP8266.X.production.obj
+digitalRead@pin 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\ESP8266.X.production.obj
+__HbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\ESP8266.X.production.obj
+_uart1_rx_ready A7 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\ESP8266.X.production.obj
+__size_of_strcat 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_strcpy 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_strlen 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\ESP8266.X.production.obj
+__pcinit F40 0 CODE 0 cinit dist/default/production\ESP8266.X.production.obj
+_SSPCON1bits FC6 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_SSPCON2bits FC5 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+uart_brg_set@brgh 1EF 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+uart_brg_set@brgl 1EE 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+__ptext0 1512 0 CODE 0 text0 dist/default/production\ESP8266.X.production.obj
+__ptext1 1542 0 CODE 0 text1 dist/default/production\ESP8266.X.production.obj
+__ptext2 152A 0 CODE 0 text2 dist/default/production\ESP8266.X.production.obj
+__ptext3 10DC 0 CODE 0 text3 dist/default/production\ESP8266.X.production.obj
+__ptext4 2CC 0 CODE 0 text4 dist/default/production\ESP8266.X.production.obj
+__ptext5 14BC 0 CODE 0 text5 dist/default/production\ESP8266.X.production.obj
+__ptext6 860 0 CODE 0 text6 dist/default/production\ESP8266.X.production.obj
+__ptext7 1440 0 CODE 0 text7 dist/default/production\ESP8266.X.production.obj
+__ptext8 146A 0 CODE 0 text8 dist/default/production\ESP8266.X.production.obj
+__ptext9 BC6 0 CODE 0 text9 dist/default/production\ESP8266.X.production.obj
+_uart2_rx_ready A4 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Serial_available 153E 0 CODE 0 text32 dist/default/production\ESP8266.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\ESP8266.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\ESP8266.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\ESP8266.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\ESP8266.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\ESP8266.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\ESP8266.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\ESP8266.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\ESP8266.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\ESP8266.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\ESP8266.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\ESP8266.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\ESP8266.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\ESP8266.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\ESP8266.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\ESP8266.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\ESP8266.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\ESP8266.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\ESP8266.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\ESP8266.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\ESP8266.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\ESP8266.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\ESP8266.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\ESP8266.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\ESP8266.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\ESP8266.X.production.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\M93z\AppData\Local\Temp\s5ks.obj
+timerBusy@index 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+_sprintf A9E 0 CODE 0 text21 dist/default/production\ESP8266.X.production.obj
+__Lpowerup 2C8 0 CODE 0 powerup dist/default/production\ESP8266.X.production.obj
+__size_of_esp8266_chk 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ESP8266.X.production.obj
+sprintf@ap 1EC 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+sprintf@sp 1E5 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\ESP8266.X.production.obj
+cipSend@dd 1F2 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+_timerSet FBE 0 CODE 0 text15 dist/default/production\ESP8266.X.production.obj
+_pinMode 2CC 0 CODE 0 text4 dist/default/production\ESP8266.X.production.obj
+_digitalRead 860 0 CODE 0 text6 dist/default/production\ESP8266.X.production.obj
+_subject 7E31 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+_Serial_begin 1440 0 CODE 0 text7 dist/default/production\ESP8266.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ESP8266.X.production.obj
+__end_of__initialization FB0 0 CODE 0 cinit dist/default/production\ESP8266.X.production.obj
+_VREFCON0 F42 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\ESP8266.X.production.obj
+__end_of_timerSet 1020 0 CODE 0 text15 dist/default/production\ESP8266.X.production.obj
+_uart2_rxbuf 200 0 BANK2 1 bssBANK2 dist/default/production\ESP8266.X.production.obj
+__pidataBANK0 14F8 0 CODE 0 idataBANK0 dist/default/production\ESP8266.X.production.obj
+_uart2_txbuf 192 0 BANK1 1 bssBANK1 dist/default/production\ESP8266.X.production.obj
+__size_of_Serial_println 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\ESP8266.X.production.obj
+_SPBRGH2 F76 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_Serial2_begin 146A 0 CODE 0 text8 dist/default/production\ESP8266.X.production.obj
+___lldiv@quotient FA 0 BANK0 1 cstackBANK0 dist/default/production\ESP8266.X.production.obj
+__pcstackCOMRAM 27 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__pmediumconst 7DC4 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+_SSP1BUF FC9 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_SSPCON2 FC5 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_uart2_rx_char 18 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+sprintf@c 1F1 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+sprintf@f 1E7 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+__end_of_init F40 0 CODE 0 text33 dist/default/production\ESP8266.X.production.obj
+__end_of_loop 14BC 0 CODE 0 text10 dist/default/production\ESP8266.X.production.obj
+__end_of_main 152A 0 CODE 0 text0 dist/default/production\ESP8266.X.production.obj
+__end_of_sync 1536 0 CODE 0 text2 dist/default/production\ESP8266.X.production.obj
+__end_of_task 1544 0 CODE 0 text1 dist/default/production\ESP8266.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\ESP8266.X.production.obj
+_cipSend CE0 0 CODE 0 text14 dist/default/production\ESP8266.X.production.obj
+__end_of_dpowers 7DCF 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+_Flags 26 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+_HMSec 48 0 COMRAM 1 dataCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_delay 1440 0 CODE 0 text29 dist/default/production\ESP8266.X.production.obj
+?_sprintf 1E5 0 BANK1 1 cstackBANK1 dist/default/production\ESP8266.X.production.obj
+_RC2IE 7D1D 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RC2IF 7D25 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RC2IP 7D2D 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_RCSTA FAB 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_T0CON FD5 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_T2CON FBA 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TMR0H FD7 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TMR0L FD6 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TX2IE 7D1C 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TX2IF 7D24 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TX2IP 7D2C 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_TXSTA FAC 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_Task1 A3 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Task2 A2 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Task3 A1 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Task4 A0 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Task5 9F 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Task6 9E 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Task7 9D 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_Task8 9C 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+_mailFrom 7E43 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+__end_of_setup 1138 0 CODE 0 text3 dist/default/production\ESP8266.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\ESP8266.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\ESP8266.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\ESP8266.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\ESP8266.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\ESP8266.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\ESP8266.X.production.obj
+_analogInput 14BC 0 CODE 0 text5 dist/default/production\ESP8266.X.production.obj
+_delay 1414 0 CODE 0 text29 dist/default/production\ESP8266.X.production.obj
+__size_of_Serial_begin 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_setup 10DC 0 CODE 0 text3 dist/default/production\ESP8266.X.production.obj
+_SSPSTATbits FC7 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_CCP2CON F66 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_CCP3CON F5D 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+keypadRead@keyNew D 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+keypadRead@keyOld 9B 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\ESP8266.X.production.obj
+__size_of_InterruptHandlerHigh 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+Serial_putc@d 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+Serial_putc@p 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__end_of_mailFrom 7E55 0 MEDIUMCONST 0 mediumconst dist/default/production\ESP8266.X.production.obj
+__end_of_Serial_available 1542 0 CODE 0 text32 dist/default/production\ESP8266.X.production.obj
+__initialization F40 0 CODE 0 cinit dist/default/production\ESP8266.X.production.obj
+_BAUDCON1bits FB8 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_BAUDCON2bits F70 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+Serial_read@d 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESP8266.X.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\ESP8266.X.production.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\ESP8266.X.production.obj
+__pbssBANK2 200 0 BANK2 1 bssBANK2 dist/default/production\ESP8266.X.production.obj
+__pdataCOMRAM 45 0 COMRAM 1 dataCOMRAM dist/default/production\ESP8266.X.production.obj
+_T2CONbits FBA 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+_spi_mode 1 0 COMRAM 1 bssCOMRAM dist/default/production\ESP8266.X.production.obj
+__size_of_Serial_putc 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__size_of_Serial_read 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\ESP8266.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\ESP8266.X.production.obj
+__size_of_Serial_available 0 0 ABS 0 - dist/default/production\ESP8266.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\ESP8266.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ESP8266.X.production.obj
+__end_of_InterruptHandlerHigh 2C8 0 CODE 0 intcode dist/default/production\ESP8266.X.production.obj
+__end_of_Serial_begin 146A 0 CODE 0 text7 dist/default/production\ESP8266.X.production.obj
+__Hintcode 2C8 0 CODE 0 intcode dist/default/production\ESP8266.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text0 0 1512 1512 32 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 A0 1
+bssBANK1 1 100 100 F7 1
+bssBANK2 1 200 200 60 1
+intcode 0 8 8 1509 1
+bssCOMRAM 1 1 1 49 1
+mediumconst 0 7DC4 7DC4 172 1
+config 0 300000 300000 E 1
