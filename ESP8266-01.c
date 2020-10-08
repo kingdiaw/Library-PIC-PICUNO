@@ -1,8 +1,76 @@
 #include "ESP8266-01.h"
-
+//Global Variable
+byte _rx_data[UART2_RX_MAX];
 /*=============================================================================
- Middle level function
+ Top Level function
  =============================================================================*/
+bool esp8266_restart(void){
+    
+    if (_eATRST()) {
+        delay(2000);
+        timerSet(ESP_TIMER, 3000);
+        while (timerBusy(ESP_TIMER)) {
+            if (_eAT()) delay(1500); /* Waiting for stable */
+            if(_eATE(0)) {
+                delay(100);
+                return true;
+            }   
+        }
+    }
+    return false;    
+}
+/*=============================================================================
+Middle Upper level function 
+ =============================================================================*/
+
+bool _setOprToStation(void){
+    uint8_t mode;
+    if (!_qATCWMODE(&mode)) return false;
+    if (mode == 1) return true;
+    else {
+        if (_sATCWMODE(1) && esp8266_restart()) {
+            return true;
+            } 
+        }
+return false;
+}
+
+bool _setOprToSoftAP(void){
+    uint8_t mode;
+    if (!_qATCWMODE(&mode)) return false;
+    if (mode == 1) return true;
+    else {
+        if (_sATCWMODE(2) && esp8266_restart()) {
+            return true;
+            } 
+        }
+return false;    
+}
+
+bool _setOprToStationSoftAP(void){
+    uint8_t mode;
+    if (!_qATCWMODE(&mode)) return false;
+    if (mode == 3) return true;
+    else {
+        if (_sATCWMODE(3) && esp8266_restart()) {
+            return true;
+            } 
+        }
+return false;      
+}
+/*=============================================================================
+ Middle lower level function
+ =============================================================================*/
+bool _eATE(uint8_t enable){
+    Serial2_clear();
+    if(enable){
+        Serial2_println("ATE1");
+    }
+    else{
+        Serial2_println("ATE0");
+    }
+    return _recvFind("OK",2000);
+}
 
 bool _eAT(void){
     Serial2_clear();    
@@ -21,7 +89,7 @@ const char* _eATGMR(void){
     
     Serial2_clear();
     Serial2_println("AT+GMR");
-    timerSet(ESP_TIMER,5000);
+    timerSet(ESP_TIMER,TIMEOUT);
     while(!Serial2_ready() && timerBusy(ESP_TIMER));
     if(Serial2_ready()){
         Serial2_readBytes(_rx_data,Serial2_available());
@@ -51,9 +119,78 @@ bool _eATCWQAP(void){
     return _recvFind("OK",2000);
 }
 
+const char* _getLocalIP(void){
+    byte dd[64];
+    byte ip1[20];
+    byte ip2[20];
+    byte mode;
+    byte _sPos;
+    byte _ePos;
+    
+    if(!_qATCWMODE(&mode))
+        return;
+    
+    Serial2_clear();
+    memset(_rx_data,0,sizeof(_rx_data));
+    memset(dd,0,sizeof(dd));
+    memset(ip1,0,sizeof(ip1));
+    memset(ip2,0,sizeof(ip2));
+    
+    Serial2_println("AT+CIFSR");
+    timerSet(ESP_TIMER,TIMEOUT);
+    if(_recvString("OK",1000)){
+        if(mode == 1 || mode == 2)   //STA Mode
+        {
+         /*
+          DECODE RESPONSE
+          MODE == 1
+          +CIFSR:STAIP,"79.80.80.79"
+          +CIFSR:STAMAC,"5c:cf:7f:b2:41:f2"
+          MODE==2
+           +CIFSR:APIP,"7.0.0.0"
+           +CIFSR:APMAC,"20:46:39:00:00:00"
+          */   
+            _sPos = FindChar(0,_rx_data,',');
+            _ePos = FindChar (0,_rx_data,'\r') - 1;
+            strncpy(ip1,_rx_data+_sPos,_ePos);  
+            
+            if(mode == 1)
+                sprintf(dd,"STAIP:%s",ip1);
+            
+            else
+                sprintf(dd,"APIP:%s",ip1);
+        }
+
+        else if (mode == 3) //Both Mode
+        {
+
+            /*
+             DECODE RESPONSE
+             +CIFSR:APIP,"7.0.0.0"
+            +CIFSR:APMAC,"20:46:39:00:00:00"
+            +CIFSR:STAIP,"79.80.80.79"
+            +CIFSR:STAMAC,"5c:cf:7f:b2:41:f2"
+             */
+
+            _sPos = FindChar(0,_rx_data,',');
+            _ePos = FindChar(0, _rx_data + _sPos, '\r') - 1;
+            strncpy(ip1,_rx_data+ _sPos, _ePos);
+            
+            _sPos = InStr(0,_rx_data,"STAIP");
+            _sPos = _sPos + (strlen("STAIP"));
+            _ePos = FindChar(0, _rx_data + _sPos, '\r') - 1;
+            strncpy (ip2, _rx_data+ _sPos, _ePos);
+            
+            sprintf(dd,"APIP:%s\r\nSTAIP:%s",ip1,ip2);
+        }
+        return dd;
+    }
+    return "No IP";
+}
+
 bool _sATCWMODE(uint8_t mode){
     byte _str[15];
-    byte _rx_data[32];
+//    byte _rx_data[32];
     
     //Clear RX buffer
     Serial2_clear();
@@ -172,16 +309,24 @@ bool _recvFind(const char* target, uint16_t timeout) {
 }
 
 bool _recvString (const char* target, uint16_t timeout){
-    byte _rx_data[UART2_RX_MAX];
+//    byte _rx_data[UART2_RX_MAX];
+    byte _index;
+    byte a;
+    bool rtnVal;
     //reload timer   
-    timerSet(ESP_TIMER,timeout);
+    timerSet(ESP_TIMER,TIMEOUT);
+    _index = 0;
+    rtnVal = false;
     while(timerBusy(ESP_TIMER)){
-     if(Serial2_ready()){
-         Serial2_readBytes(_rx_data,Serial2_available());
-         if(InStr(0,_rx_data,target))
-         break;   
+         while(Serial2_available()>0){
+             a = Serial2_read();
+             if(a == '\0') continue;
+             _rx_data[_index++] = a;
+         }
+         if(InStr(0,_rx_data,target)){
+             rtnVal = true;
+             break;
+         }
     }
-     return true;
-    }
-    return false;
+    return rtnVal;
 }
