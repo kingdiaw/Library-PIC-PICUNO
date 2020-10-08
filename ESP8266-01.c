@@ -1,9 +1,40 @@
 #include "ESP8266-01.h"
 //Global Variable
 byte _rx_data[UART2_RX_MAX];
-
 /*=============================================================================
- Middle level function
+ Top Level function
+ =============================================================================*/
+bool esp8266_restart(void){
+	
+	if (_eATRST()) {
+		delay(2000);
+		timerSet(ESP_TIMER, 3000);
+		while (timerBusy(ESP_TIMER)) {
+			if (_eAT()) delay(1500); /* Waiting for stable */
+            if(_eATE(0)) {
+                delay(100);
+                return true;
+            }	
+		}
+	}
+	return false;    
+}
+/*=============================================================================
+Middle Upper level function 
+ =============================================================================*/
+bool _setOprToStationSoftAP(void){
+    uint8_t mode;
+    if (!_qATCWMODE(&mode)) return false;
+	if (mode == 3) return true;
+	else {
+		if (_sATCWMODE(3) && restart()) {
+			return true;
+			} 
+		}
+return false;      
+}
+/*=============================================================================
+ Middle lower level function
  =============================================================================*/
 bool _eATE(uint8_t enable){
     Serial2_clear();

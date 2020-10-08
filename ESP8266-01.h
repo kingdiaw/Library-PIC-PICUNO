@@ -5,9 +5,13 @@
 #define ESP_TIMER 5
 #define TIMEOUT 10000
 
-bool _recvFind(const char* target, uint16_t timeout);
-bool _recvString (const char* target, uint16_t timeout);
+//TOP LEVEL FUNCTION
+bool esp8266_restart(void);
 
+//MIDDLE UPPER LEVEL FUNCTION
+bool _setOprToStationSoftAP(void);
+
+//MIDDLE LOWER LEVEL FUNCTION
 bool _eATE(uint8_t enable);
 bool _eAT(void);
 bool _eATRST(void);
@@ -17,6 +21,12 @@ bool _eATCWQAP(void);
 bool _sATCWMODE(uint8_t mode);
 bool _qATCWMODE(uint8_t *mode);
 const char* _getLocalIP(void);
+
+//LOW LEVEL FUNCTION
+bool _recvFind(const char* target, uint16_t timeout);
+bool _recvString (const char* target, uint16_t timeout);
+
+
 
 
 #endif /* #ifndef __ESP8266_H__ */

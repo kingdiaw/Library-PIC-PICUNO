@@ -17,6 +17,9 @@ void setup(){
     Serial_begin(115200);
     Serial2_begin(115200);
     
+    sprintf(buf,"Restart status:%d",esp8266_restart());
+    Serial_println(buf);
+    
 //    memset(dd,0,sizeof(dd));
 //    Serial_print(test_data);
 //    index_start = FindChar(0,test_data,','); 
@@ -34,11 +37,11 @@ void setup(){
 //    strncpy(dd,test_data + index_start, index_end);
 //    Serial_println(dd);
 
-    if(_sATCWJAP(ssid,password))
-        Serial_println("WiFi Connected");
-    else
-        Serial_println("Error");
-    Serial_println(_getLocalIP());
+//    if(_sATCWJAP(ssid,password))
+//        Serial_println("WiFi Connected");
+//    else
+//        Serial_println("Error");
+//    Serial_println(_getLocalIP());
 
 //    sprintf(buf,"Status:%d",_sATCWMODE(mode));
 //    Serial_println(buf);
