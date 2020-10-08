@@ -40,7 +40,6 @@ void setup(){
         Serial_println("Error");
     Serial_println(_getLocalIP());
 
-    while(1);
 //    sprintf(buf,"Status:%d",_sATCWMODE(mode));
 //    Serial_println(buf);
 //    if(_qATCWMODE(&mode)){
@@ -49,6 +48,8 @@ void setup(){
 //    }
 //    sprintf(buf,"Version:%s",_eATGMR());
 //    Serial_println(buf);
+    Serial_clear();
+    Serial2_clear();
 }
 void loop(){
     if(Serial2_available())

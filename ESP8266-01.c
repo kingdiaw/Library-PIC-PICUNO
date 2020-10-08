@@ -5,6 +5,16 @@ byte _rx_data[UART2_RX_MAX];
 /*=============================================================================
  Middle level function
  =============================================================================*/
+bool _eATE(uint8_t enable){
+    Serial2_clear();
+    if(enable){
+        Serial2_println("ATE1");
+    }
+    else{
+        Serial2_println("ATE0");
+    }
+    return _recvFind("OK",2000);
+}
 
 bool _eAT(void){
     Serial2_clear();    
@@ -117,10 +127,8 @@ const char* _getLocalIP(void){
             
             sprintf(dd,"APIP:%s\r\nSTAIP:%s",ip1,ip2);
         }
-
         return dd;
     }
-        //return _rx_data;
     return "No IP";
 }
 

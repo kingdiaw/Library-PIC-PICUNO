@@ -8,6 +8,7 @@
 bool _recvFind(const char* target, uint16_t timeout);
 bool _recvString (const char* target, uint16_t timeout);
 
+bool _eATE(uint8_t enable);
 bool _eAT(void);
 bool _eATRST(void);
 const char* _eATGMR(void);
