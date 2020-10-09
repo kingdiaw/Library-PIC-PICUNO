@@ -1,68 +1,7 @@
 #include "ESP8266-01.h"
 //Global Variable
 byte _rx_data[UART2_RX_MAX];
-<<<<<<< HEAD
-/*=============================================================================
- Top Level function
- =============================================================================*/
-bool esp8266_restart(void){
-    
-    if (_eATRST()) {
-        delay(2000);
-        timerSet(ESP_TIMER, 3000);
-        while (timerBusy(ESP_TIMER)) {
-            if (_eAT()) delay(1500); /* Waiting for stable */
-            if(_eATE(0)) {
-                delay(100);
-                return true;
-            }   
-        }
-    }
-    return false;    
-}
-/*=============================================================================
-Middle Upper level function 
- =============================================================================*/
 
-bool _setOprToStation(void){
-    uint8_t mode;
-    if (!_qATCWMODE(&mode)) return false;
-    if (mode == 1) return true;
-    else {
-        if (_sATCWMODE(1) && esp8266_restart()) {
-            return true;
-            } 
-        }
-return false;
-}
-
-bool _setOprToSoftAP(void){
-    uint8_t mode;
-    if (!_qATCWMODE(&mode)) return false;
-    if (mode == 1) return true;
-    else {
-        if (_sATCWMODE(2) && esp8266_restart()) {
-            return true;
-            } 
-        }
-return false;    
-}
-
-bool _setOprToStationSoftAP(void){
-    uint8_t mode;
-    if (!_qATCWMODE(&mode)) return false;
-    if (mode == 3) return true;
-    else {
-        if (_sATCWMODE(3) && esp8266_restart()) {
-            return true;
-            } 
-        }
-return false;      
-}
-/*=============================================================================
- Middle lower level function
- =============================================================================*/
-=======
 /*=============================================================================
  Top Level function
  =============================================================================*/
@@ -98,7 +37,6 @@ return false;
 /*=============================================================================
  Middle lower level function
  =============================================================================*/
->>>>>>> 220f24ee38ce9f9268890340f78b99dad1f71bd2
 bool _eATE(uint8_t enable){
     Serial2_clear();
     if(enable){
