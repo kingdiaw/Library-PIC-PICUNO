@@ -251,6 +251,42 @@ bool _sATCWMODE(uint8_t mode){
     //otherwise return false
     return false;
 }
+
+bool _sATCIPSTARTMultiple(uint8_t mux_id, const char* type, const char* addr, uint16_t port){
+    Serial2_clear();
+    memset(esp.buf,0,sizeof(esp.buf));
+    sprintf(esp.buf,"AT+CIPSTART=%d,\"%s\",\"%s\",%d",mux_id,type,addr,port);
+    Serial2_println(esp.buf);
+    if(_recvFind("ERROR",5000))
+        return false;
+    return true;
+}
+
+bool _sATCIPSERVER(uint8_t mode,uint16_t port){
+    Serial2_clear();
+    memset(esp.buf,0,sizeof(esp.buf));
+    if(mode){   //mode 1 to open
+        sprintf(esp.buf,"AT+CIPSERVER=1,%d",port);
+        Serial2_println(esp.buf);
+        if(_recvFind("OK",TIMEOUT))
+            return true;
+    }
+    else{
+        Serial2_println("AT+CIPSERVER=0");
+        if(_recvFind("OK",TIMEOUT))
+            return true;
+    }
+    return false;
+}
+
+bool _sATCIPSTO(uint16_t timeout){  
+    Serial2_clear();
+    memset(esp.buf,0,sizeof(esp.buf));
+    sprintf(esp.buf,"AT+AT+CIPSTO=%d",timeout);
+    Serial2_println(esp.buf);
+    if(_recvFind("OK",TIMEOUT)) return true;
+    return false;
+}
 /*=============================================================================
  Low level function
  =============================================================================*/

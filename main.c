@@ -17,15 +17,30 @@ void setup(){
     Serial_begin(115200);
     Serial2_begin(115200);
     
-
+    
     sprintf(buf,"Restart status:%d",esp8266_restart());
     Serial_println(buf);
     
-    sprintf(buf,"Disable Multi connection=%d", _disableMUX());
-    Serial_println(buf); delay(1000);
+    sprintf(buf,"Set to Station+SoftAP",_setOprToStationSoftAP());
+    Serial_println(buf);
+    
+    sprintf(buf,"Join AP:%d",_sATCWJAP(ssid,password));
+    Serial_println(buf);
+    
+    Serial_println(_getLocalIP());
     
     sprintf(buf,"Enble Multi connection=%d",_enableMUX());
+    Serial_println(buf);  
+    
+    sprintf(buf,"Open TCP Connection:%d",_sATCIPSTARTMultiple(4, "TCP", "api.thingspeak.com", 80));
     Serial_println(buf);
+    
+    
+//    
+//    sprintf(buf,"Disable Multi connection=%d", _disableMUX());
+//    Serial_println(buf); delay(1000);
+//    
+
     
 //    memset(dd,0,sizeof(dd));
 //    Serial_print(test_data);
@@ -58,8 +73,6 @@ void setup(){
 //    }
 //    sprintf(buf,"Version:%s",_eATGMR());
 //    Serial_println(buf);
-    Serial_clear();
-    Serial2_clear();
 }
 void loop(){
     if(Serial2_available())

@@ -8,7 +8,7 @@
 struct arrayData {
    uint8_t  array[UART2_RX_MAX];
    uint8_t  length;
-   uint8_t  buf[32];
+   uint8_t  buf[64];
 };
 
 //TOP LEVEL FUNCTION
@@ -17,7 +17,7 @@ bool esp8266_kick(void);
 
 //MIDDLE UPPER LEVEL FUNCTION
 bool _setOprToStation(void);
-bool _setOprToStationSoftAP(void);
+bool _setOprToSoftAP(void);
 bool _setOprToStationSoftAP(void);
 bool _enableMUX(void);
 bool _disableMUX(void);
@@ -47,12 +47,14 @@ bool _sATCIPAP (const char* ip);    //SetIP address of ESP8266 SoftAP
 
 //TCP/IP AT Command for ESP8266
 bool _eATCIPSTATUS(void);   // Get the connection status
-bool _eATCIPSTART(void);    //Establishes TCP connection, UDP transmission or SSL
+//bool _eATCIPSTART(void);    //Establishes TCP connection, UDP transmission or SSL
+bool _sATCIPSTARTMultiple(uint8_t mux_id, const char* type, const char* addr, uint16_t port);
 bool _eATCIPSEND(const char* data); //Send data
 bool _eATCIPCLOSE(void);    //Close TCP/UDP/SSL Connection
 const char* _getLocalIP(void);
 bool _sATCIPMUX(uint8_t mode);
-bool _eATCIPSERVER(uint8_t chn,uint16_t port);  //Delete/create TCP Server
+bool _sATCIPSERVER(uint8_t mode,uint16_t port);  //Delete/create TCP Server
+bool _sATCIPSTO(uint16_t timeout);  //Set timeout when ESP8266 runs as TCP Server
 
 
 //LOW LEVEL FUNCTION
