@@ -17,11 +17,8 @@ void setup(){
     Serial_begin(115200);
     Serial2_begin(115200);
     
-<<<<<<< HEAD
-    sprintf(buf,"Set Operation status:%d",_setOprToStation());
-=======
+
     sprintf(buf,"Restart status:%d",esp8266_restart());
->>>>>>> 220f24ee38ce9f9268890340f78b99dad1f71bd2
     Serial_println(buf);
     
 //    memset(dd,0,sizeof(dd));
