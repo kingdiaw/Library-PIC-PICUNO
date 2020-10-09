@@ -9,11 +9,6 @@
 bool esp8266_restart(void);
 
 //MIDDLE UPPER LEVEL FUNCTION
-<<<<<<< HEAD
-bool _setOprToStation(void);
-bool _setOprToSoftAP(void);
-=======
->>>>>>> 220f24ee38ce9f9268890340f78b99dad1f71bd2
 bool _setOprToStationSoftAP(void);
 
 //MIDDLE LOWER LEVEL FUNCTION
