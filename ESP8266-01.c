@@ -1,6 +1,7 @@
 #include "ESP8266-01.h"
 //Global Variable
 byte _rx_data[UART2_RX_MAX];
+struct arrayData esp;
 
 /*=============================================================================
  Top Level function
@@ -19,6 +20,10 @@ bool esp8266_restart(void){
 		}
 	}
 	return false;    
+}
+
+bool esp8266_kick(void){
+    return _eAT();
 }
 /*=============================================================================
 Middle Upper level function 
@@ -40,7 +45,7 @@ bool _setOprToSoftAP(void){
     if (!_qATCWMODE(&mode)) return false;
 	if (mode == 3) return true;
 	else {
-		if (_sATCWMODE(1) && esp8266_restart()) {
+		if (_sATCWMODE(2) && esp8266_restart()) {
 			return true;
 			} 
 		}
@@ -56,6 +61,21 @@ bool _setOprToStationSoftAP(void){
 			} 
 		}
 return false;      
+}
+
+bool _enableMUX(void){
+    return _sATCIPMUX(1);
+}
+bool _disableMUX(void){
+    return _sATCIPMUX(0);
+}
+
+bool _joinAP(const char* ssid, const char* pwd){
+    return _sATCWJAP(ssid,pwd);
+}
+
+bool _leaveAP(void){
+    return _eATCWQAP();
 }
 /*=============================================================================
  Middle lower level function
@@ -185,6 +205,16 @@ const char* _getLocalIP(void){
         return dd;
     }
     return "No IP";
+}
+
+bool _sATCIPMUX(uint8_t mode){
+    Serial2_clear();
+    memset(esp.buf,0,sizeof(esp.buf));
+    sprintf(esp.buf,"AT+CIPMUX=%d",mode);
+    Serial2_println(esp.buf);
+    if(_recvFind("OK",3000))
+        return true;
+    return false;
 }
 
 bool _sATCWMODE(uint8_t mode){

@@ -21,6 +21,12 @@ void setup(){
     sprintf(buf,"Restart status:%d",esp8266_restart());
     Serial_println(buf);
     
+    sprintf(buf,"Disable Multi connection=%d", _disableMUX());
+    Serial_println(buf); delay(1000);
+    
+    sprintf(buf,"Enble Multi connection=%d",_enableMUX());
+    Serial_println(buf);
+    
 //    memset(dd,0,sizeof(dd));
 //    Serial_print(test_data);
 //    index_start = FindChar(0,test_data,','); 
