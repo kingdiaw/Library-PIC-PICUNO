@@ -8,7 +8,7 @@ bool esp8266_restart(void){
 	
 	if (_eATRST()) {
 		delay(2000);
-		timerSet(ESP_TIMER, 3000);
+		timerSet(ESP_TIMER, TIMEOUT);
 		while (timerBusy(ESP_TIMER)) {
 			if (_eAT()) delay(1500); /* Waiting for stable */
             if(_eATE(0)) {
@@ -22,12 +22,35 @@ bool esp8266_restart(void){
 /*=============================================================================
 Middle Upper level function 
  =============================================================================*/
+bool _setOprToStation(void){
+    uint8_t mode;
+    if (!_qATCWMODE(&mode)) return false;
+	if (mode == 3) return true;
+	else {
+		if (_sATCWMODE(1) && esp8266_restart()) {
+			return true;
+			} 
+		}
+return false;     
+}
+
+bool _setOprToSoftAP(void){
+    uint8_t mode;
+    if (!_qATCWMODE(&mode)) return false;
+	if (mode == 3) return true;
+	else {
+		if (_sATCWMODE(1) && esp8266_restart()) {
+			return true;
+			} 
+		}
+return false;    
+}
 bool _setOprToStationSoftAP(void){
     uint8_t mode;
     if (!_qATCWMODE(&mode)) return false;
 	if (mode == 3) return true;
 	else {
-		if (_sATCWMODE(3) && restart()) {
+		if (_sATCWMODE(2) && esp8266_restart()) {
 			return true;
 			} 
 		}
@@ -44,7 +67,7 @@ bool _eATE(uint8_t enable){
     else{
         Serial2_println("ATE0");
     }
-    return _recvFind("OK",2000);
+    return _recvFind("OK",1000);
 }
 
 bool _eAT(void){
